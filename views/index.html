@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Weather App</title>
+  </head>
+
+  <body class="body">
+    <!-- This container only visible when application loads -->
+    <div class="loading-container">
+      <img
+        src="/images/loading-animation.svg"
+        alt="Loading Animation"
+        class="loading-container__animation"
+      />
+
+      <h1 class="loading-container__caption">loading. . .</h1>
+    </div>
+
+    <div class="main-container main-container--hide">
+      <div class="weather-information">
+        <div class="weather-information__humidity">
+          <div class="weather-information__header">
+            <svg class="weather-information__icon">
+              <use href="/images/sprite.svg#icon-windy"></use>
+            </svg>
+
+            <p class="weather-information__caption">humidity</p>
+          </div>
+
+          <h3 class="weather-information__value" id="humidity">&nbsp;</h3>
+        </div>
+
+        <div class="weather-information__chance-of-rain">
+          <div class="weather-information__header">
+            <svg class="weather-information__icon">
+              <use href="/images/sprite.svg#icon-rainy"></use>
+            </svg>
+
+            <p class="weather-information__caption">chance of rain</p>
+          </div>
+
+          <h3 class="weather-information__value" id="chance-of-rain">&nbsp;</h3>
+        </div>
+
+        <div class="weather-information__wind-speed">
+          <div class="weather-information__header">
+            <svg class="weather-information__icon">
+              <use href="/images/sprite.svg#icon-wind"></use>
+            </svg>
+
+            <p class="weather-information__caption">wind speed</p>
+          </div>
+
+          <h3 class="weather-information__value" id="wind-speed">&nbsp;</h3>
+        </div>
+      </div>
+
+      <div class="weather">
+        <div class="weather__status">
+          <svg class="weather__icon--cloud">
+            <use href="/images/sprite.svg#icon-cloudy"></use>
+          </svg>
+
+          <p class="weather__condition">&nbsp;</p>
+        </div>
+
+        <div class="weather__location">
+          <svg class="weather__icon--location">
+            <use href="/images/sprite.svg#icon-compass"></use>
+          </svg>
+
+          <p class="weather__place">&nbsp;</p>
+        </div>
+
+        <div class="weather__temprature">
+          <h3 class="weather__value" id="temprature">&nbsp;</h3>
+
+          <svg class="weather__icon--temprature">
+            <use href="/images/sprite.svg#icon-Celsius"></use>
+          </svg>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p class="footer__caption">made with ❤️ by sourov</p>
+      </footer>
+
+      <script src="/script/script.js"></script>
+    </div>
+  </body>
+</html>

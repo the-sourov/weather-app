@@ -1,0 +1,22 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "This is a weather app 🔥.",
+  "main": "app.js",
+  "scripts": {
+    "compile:scss": "sass --watch scss/main.scss public/css/style.css",
+    "start:test-server": "nodemon ./app.js",
+    "start": "node ./app.js"
+  },
+  "author": "Sourov Biswas",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "sass": "^1.43.5"
+  }
+}

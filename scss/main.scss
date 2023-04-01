@@ -1,0 +1,16 @@
+// -----> importing helper files
+@import "0-helper/color";
+
+// -----> importing base files
+@import "1-base/base";
+
+// -----> importing layout files
+@import "2-layout/loading-container";
+@import "2-layout/main-container";
+
+// -----> importing component files
+@import "3-component/error-text";
+@import "3-component/loading-caption";
+@import "3-component/weather";
+@import "3-component/weather-information";
+@import "3-component/footer";

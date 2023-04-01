@@ -1,0 +1,66 @@
+.weather {
+  display: inline-block;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  & > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &__icon--cloud {
+    display: block;
+    fill: #f5f5f5;
+    height: 5rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 5rem;
+  }
+
+  &__condition {
+    color: $color-white;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.6rem;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  &__location {
+    align-items: center;
+    display: flex;
+  }
+
+  &__icon--location {
+    fill: #f5f5f5;
+    height: 2rem;
+    margin-right: 0.6rem;
+    width: 2rem;
+  }
+
+  &__place {
+    color: $color-white;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+  &__temprature {
+    align-items: center;
+    display: flex;
+  }
+
+  &__value {
+    color: $color-white;
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  &__icon--temprature {
+    fill: $color-white;
+    height: 6rem;
+    transform: translateX(-1.5rem);
+    width: 6rem;
+  }
+}

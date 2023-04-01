@@ -1,0 +1,47 @@
+.weather-information {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+
+  @media only screen and (max-width: 550px) {
+    display: none;
+  }
+
+  & > * {
+    color: $color-white;
+  }
+
+  & > *:not(:last-child) {
+    margin-right: 6rem;
+
+    @media only screen and (max-width: 600px) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__header {
+    align-items: center;
+    display: flex;
+  }
+
+  &__icon {
+    fill: $color-white;
+    height: 3.5rem;
+    margin-right: 1rem;
+    width: 3.5rem;
+  }
+
+  &__caption {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  &__value {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

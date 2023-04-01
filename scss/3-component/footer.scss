@@ -1,0 +1,19 @@
+.footer {
+  left: 50%;
+  position: absolute;
+  bottom: 5%;
+  transform: translate(-50%, -50%);
+
+  &__caption {
+    color: $color-white;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: 465px) {
+      font-size: 1.2rem;
+      letter-spacing: 0;
+    }
+  }
+}
